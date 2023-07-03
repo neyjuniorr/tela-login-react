@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
+  width: 290px;
+  background-color: #261d12d0;
+  border-radius: 10px;
+  margin: 80px auto;
+  box-shadow: 0px 2px 5px 2px #080808cb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 250px;
+  text-align: center;
+  color: #000;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url('../src/image/biblioteca.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Estilos para telas menores (máximo de 600px de largura) */
+@media screen and (max-width: 600px) {
+  .App {
+    width: 50%; /* Redimensiona a largura do container */
+    margin: 40px auto; /* Redimensiona as margens */
+  }
+
+  body { 
+      background-color: #8C593B;
+  }
+
+  form {
+    width: 50%; /* Redimensiona a largura do formulário */
+  }
+
+  input,
+  button {
+    width: 100%; /* Redimensiona a largura dos elementos de entrada e botões */
+  }
+}
+
